@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Desafio nivel agua*/
+#nivel_agua{
+    background-color: beige;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.nivel_agua{
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+    margin: 10px;
+}
+
+#nivel_danoninho{
+    background-color: bisque;
+    padding: 10px;
+    display: flex;
+    
+}
+
+#cabecalho{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(209, 111, 255);
+}
+
+#conteudo_principal{
+    display: flex;
+    
+    background-color: black;
+}
+
+.nivel_danoninho{
+    height: 300px;
+    
+    background-color: rgb(209, 111, 255);
+    
+}
+#div_1{
+    margin: 10px 5px 0px 0px;
+}
+#div_2{
+    margin: 10px 0px 0px 5px;
+}
+/*Nivel Suco*/
+#nivel_suco{
+    padding: 10px;
+    background-color: aqua;
+}
+
+#cabecalho_suco{
+    width: 100%;
+    height: 60px;
+    background-color: blueviolet;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu_suco{
+    padding: 5px;
+}
+#menu_suco ul{
+    display: flex;
+    
+    gap: 10px;
+    
+}
+
+li{
+    background-color: rgb(60, 0, 112);
+    width: 40px;
+    height: 40px;
+}
+
+
+#logo{
+    
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+}
+
+#sec_suco{
+    margin: 10px 0px 0px 0px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+}
+
+.conteudo_suco{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#bloco_suco1{
+    
+    background-color: rgb(132, 0, 255);
+}
+#bloco_suco2{
+    
+    background-color: rgb(208, 159, 253);
+}
+
+
+@media(max-width:600px){
+    #nivel_agua{
+        flex-direction: column;
+    }
+    #nivel_danoninho{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #conteudo_principal{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #div_1, #div_2{
+        margin: 0px;
+    }
+
+    #nivel_suco{
+        display: flex;
+        flex-direction: column;
+    }
+    #sec_suco{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #bloco_suco1,#bloco_suco2{
+        background-color: blueviolet;
+    }
+    
+}

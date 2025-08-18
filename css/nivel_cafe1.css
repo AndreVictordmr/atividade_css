@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cafe{
+    display: grid;
+    gap: 10px;
+}
+
+#cabecalho{
+    background-color: blueviolet;
+    display: grid;
+
+    place-items: center center;
+}
+#cabecalho h1{
+    color: yellow;
+}
+
+#semelhanca{
+    display: grid;
+
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    place-items: center center;
+}
+
+.texto h2{
+    color: rgb(204, 173, 1);
+
+    padding: 10px 0px;
+}
+
+
+
+#proximidade{
+    display: grid;
+
+    padding: 10px;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    place-items: center center;
+}
+
+@media(max-width: 600px){
+    #semelhanca{
+        grid-template-columns: 1fr;
+    }
+    .foto{
+        order: 1;
+    }
+    .texto{
+        order: 2;
+    }
+    #proximidade{
+        grid-template-columns: 1fr;
+    }
+}

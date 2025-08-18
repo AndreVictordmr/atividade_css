@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#cafe{
+    display: grid;
+    gap: 10px;
+}
+
+#cabecalho{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center center;
+}
+#logo h1{
+    color: yellow;
+}
+#menu {
+    background-color: rgb(162, 93, 226);
+    border-top: 2px solid rgb(132, 0, 255);
+
+    width: 100%;
+    padding: 0px 10px;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    place-items: center center;
+}
+
+#menu ul{
+    list-style: none;
+
+    display: flex;
+    gap: 10px;
+
+    flex-wrap: wrap;
+    place-items: center center;
+}
+
+#menu ul li{
+    padding: 10px;
+}
+
+#menu ul li:hover{
+    cursor: pointer;
+    color: aliceblue;
+}
+
+#semelhanca{
+    display: grid;
+
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    place-items: center center;
+}
+
+.texto h2{
+    color: rgb(204, 173, 1);
+
+    padding: 10px 0px;
+}
+
+
+
+#proximidade{
+    display: grid;
+
+    padding: 10px;
+
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    place-items: center center;
+}
+
+@media(max-width: 600px){
+    #cabecalho{
+        grid-template-columns: 1fr;
+    }
+    #menu ul{
+        flex-direction: column;
+    }
+    #semelhanca{
+        grid-template-columns: 1fr;
+    }
+    .foto{
+        order: 1;
+    }
+    .texto{
+        order: 2;
+    }
+    #proximidade{
+        grid-template-columns: 1fr;
+    }
+}
