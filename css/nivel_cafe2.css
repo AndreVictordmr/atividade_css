@@ -12,7 +12,7 @@
 #cabecalho{
     background-color: blueviolet;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr  1fr;
     place-items: center center;
 }
 #logo h1{
@@ -23,16 +23,19 @@
     border-top: 2px solid rgb(132, 0, 255);
 
     width: 100%;
-    padding: 0px 10px;
+    
 
+
+}
+#itens{
     display: grid;
 
     grid-template-columns: 1fr;
 
-    place-items: center center;
+    place-items: center end;
 }
 
-#menu ul{
+#itens ul{
     list-style: none;
 
     display: flex;
@@ -42,16 +45,25 @@
     place-items: center center;
 }
 
-#menu ul li{
+#itens ul li {
     padding: 10px;
+    
+
+}
+#itens ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-#menu ul li:hover{
+#itens ul li a:hover{
     cursor: pointer;
-    color: aliceblue;
+    background-color: rgb(178, 138, 218);
+    padding: 5px;
+    border-radius: 10px;
+    
 }
 
-#semelhanca{
+.conteudo{
     display: grid;
 
     padding: 10px;
@@ -69,35 +81,25 @@
 }
 
 
-
-#proximidade{
-    display: grid;
-
-    padding: 10px;
-
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-
-    place-items: center center;
-}
-
 @media(max-width: 600px){
     #cabecalho{
         grid-template-columns: 1fr;
     }
-    #menu ul{
+    #itens{
+        place-items: center center;
+    }
+    #itens ul{
         flex-direction: column;
     }
-    #semelhanca{
+    .conteudo{
         grid-template-columns: 1fr;
     }
-    .foto{
+    .foto figure img{
+        width: 300px;
         order: 1;
     }
     .texto{
         order: 2;
     }
-    #proximidade{
-        grid-template-columns: 1fr;
-    }
+    
 }
