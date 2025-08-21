@@ -9,7 +9,13 @@
     gap: 10px;
 }
 
-#cabecalho{
+#cabecalho.desktop{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 0.5fr  1fr;
+    place-items: center center;
+}
+#cabecalho.moblie{
     background-color: blueviolet;
     display: grid;
     grid-template-columns: 0.5fr  1fr;
@@ -82,8 +88,13 @@
 
 
 @media(max-width: 600px){
-    #cabecalho{
+    #cabecalho.desktop{
         grid-template-columns: 1fr;
+        display: none;
+    }
+    #cabecalho.moblie{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
     }
     #itens{
         place-items: center center;
