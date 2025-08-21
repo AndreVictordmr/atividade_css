@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    /*Cores*/
+    --cor_principal:rgb(204, 173, 1);
+    --cor_menu:#EAC452;
+}
 #cafe{
     display: grid;
     gap: 10px;
@@ -22,7 +26,7 @@
     place-items: center center;
 }
 #logo h1{
-    color: yellow;
+    color: var(--cor_menu);
 }
 #menu {
     background-color: rgb(162, 93, 226);
@@ -32,6 +36,12 @@
     
 
 
+}
+.offcanvas-header{
+    background-color: rgb(185, 151, 218);   
+}
+.offcanvas-header h5{
+    color: var(--cor_menu);
 }
 #itens{
     display: grid;
@@ -57,7 +67,7 @@
 
 }
 #itens ul li a{
-    color: rgb(255, 255, 255);
+    color:var(--cor_menu);
     text-decoration: none;
 }
 
@@ -81,7 +91,7 @@
 }
 
 .texto h2{
-    color: rgb(204, 173, 1);
+    color: var(--cor_principal);
 
     padding: 10px 0px;
 }
