@@ -21,9 +21,11 @@
 }
 #cabecalho.moblie{
     background-color: blueviolet;
-    display: grid;
+    display: none;
     grid-template-columns: 0.5fr  1fr;
     place-items: center center;
+    position:sticky ;
+    top: 0;
 }
 #logo h1{
     color: var(--cor_menu);
@@ -95,7 +97,9 @@
 
     padding: 10px 0px;
 }
-
+.foto figure img{
+    width: 100%;
+}
 
 @media(max-width: 600px){
     #cabecalho.desktop{
